@@ -2,7 +2,7 @@
 from ZODB import FileStorage, DB
 import transaction
 
-class MiDataBase(object):
+class MiZODB(object):
     def __init__ (self, archivo):
         self.storage = FileStorage.FileStorage(archivo)
         self.db = DB(self.storage)
